@@ -1,0 +1,203 @@
+@import url(https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Racing Sans One";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #969494;
+  background-color: rgb(56, 56, 56);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm{
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px){
+  .container-sm, .container{
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1320px;
+  }
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgb(97, 97, 97);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.card-body{
+  flex: 2 2 auto;
+  padding: 1.5rem 1.5rem;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.box-with-text {
+  background-image: url('https://unsplash.imgix.net/photo-1433354359170-23a4ae7338c6?fit=crop&fm=jpg&h=700&q=75&w=1050');
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Other styles */
+body {
+  background: #000;
+  color: #FFF;
+}
+
+.box-with-text {
+  position: relative;
+  margin-top:50px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-repeat: repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:95px;
+  font-family:Oswald, Impact;
+}
+
+.box-with-text-2 {
+  background-image: -webkit-linear-gradient(rgb(43, 0, 199) 50%, rgb(59, 32, 90) 80%);
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-size: 100% 50px;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-animation: stripes 2s linear infinite;
+  animation: stripes 2s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+@keyframes stripes {
+  100% {
+    background-position: 0 -50px;
+  }
+}
+
+.box-with-text-2 {
+  position: relative;
+  display:block;
+  margin-top:50px;
+  left: 50%;
+  white-space: nowrap;
+  text-align: center;
+  text-transform: uppercase;
+  font-size:82px;
+  font-family: bold Open Sans, Impact;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.text {
+  fill: none;
+  stroke-width: 6;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 6s infinite linear;
+  animation: stroke 6s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+svg {
+  position: absolute;
+  left:0;
+  right:0;
+  width: 250px;
+  height: 250px;
+  margin:0 auto;
+}
