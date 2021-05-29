@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&family=Roboto:ital,wght@1,500&display=swap');
 
 body {
   background-color: #323232;
@@ -7,7 +7,10 @@ body {
 }
 
 .navbar-text {
-  font-family: 'Luckiest Guy', cursive;
-  font-size: 24px;
-  letter-spacing: 6px;
+  font-family: 'Nova Cut', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+  letter-spacing: .5px;
+  outline-color: #000;
+  outline-width: 5px;
 }
