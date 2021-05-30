@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap');
-body {
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@500&family=Squada+One&display=swap');
+* {
   /* font-family: 'Luckiest Guy', cursive; */
   font-family: 'Roboto', sans-serif;
 }
@@ -34,7 +34,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: 'Squada One', cursive;
+}
+
+.card-header {
+  font-family: 'Squada One', cursive;
+  font-size: 2rem;
 }
 
 .display-4 {
@@ -121,4 +126,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+img {
+  object-fit: contain;
+  object-position: 50%;
 }
