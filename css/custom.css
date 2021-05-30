@@ -1,16 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Nova+Cut&family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap');
 
 body {
-  background-color: #323232;
+  background-color: rgb(56, 56, 56);
   /* font-family: 'Luckiest Guy', cursive; */
   font-family: 'Roboto', sans-serif;
 }
 
+.navbar {
+  background-color: #202020;
+}
+
 .navbar-text {
-  font-family: 'Nova Cut', cursive;
-  font-size: 50px;
+  font-family: 'Squada One', cursive;
+  font-size: 64px;
   font-weight: bolder;
-  letter-spacing: .5px;
-  outline-color: #000;
-  outline-width: 5px;
+  letter-spacing: 4px;
+  color: #303030;
+}
+
+.card {
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility;
 }
