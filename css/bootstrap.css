@@ -51,7 +51,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background-color: rgb(143, 143, 143);
+  background-color: rgb(189, 189, 189);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -202,11 +202,11 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+  color: #001b44;
   text-decoration: underline;
 }
 a:hover {
-  color: #0a58ca;
+  color: #000000;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -6313,7 +6313,7 @@ textarea.form-control-lg {
 
 .d-inline {
   display: inline !important;
-  
+
 }
 
 .d-inline-block {
