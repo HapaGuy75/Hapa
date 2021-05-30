@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Squada+One&display=swap');
 body {
-
   /* font-family: 'Luckiest Guy', cursive; */
   font-family: 'Roboto', sans-serif;
 }
 
-.navbar {
+/* .navbar {
   background-color: #242424;
-}
+} */
 
 .blog-header-logo {
   font-family: active,sans-serif;
@@ -15,12 +14,8 @@ body {
   font-style: normal;
   font-size: 64px;
   letter-spacing: 4px;
-  color: #686868;
-
-
+  /* color: #686868; */
 }
-
-
 /* stylelint-disable selector-list-comma-newline-after */
 
 .blog-header {
@@ -116,9 +111,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #727272;
 }
 
-/*
- * Footer
- */
+/** Footer **/
 .blog-footer {
   padding: 2.5rem 0;
   color: #727272;
