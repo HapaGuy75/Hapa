@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:wght@500&family=Squada+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Permanent+Marker&family=Roboto:wght@500&family=Squada+One&display=swap');
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -142,4 +141,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
+}
+
+.words {
+  font-family: 'Permanent Marker', cursive;
+  color: #000000;
+  font-size: 0;
+  line-height: 1;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.words span {
+  font-size: 12rem;
+  display: inline-block;
+  animation: move 5s ease-in-out infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 10px 50px rgba(150, 150, 150, 0.75);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+
+.words span:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.words span:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.words span:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+.words span:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.words span:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.words span:nth-child(7) {
+  animation-delay: 1.50s;
 }
