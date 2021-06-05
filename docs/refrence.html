@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/custom.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>HapaGuy - Git Page for Testing</title>
+</head>
+<body>
+<div class="sidenav">
+  <div class="text-center">
+    <img src="../assets/hg_light_v2.png" alt="HG Logo" style="width:75px;height:75px"></img>
+  </div>
+</div>
+<div class="main">
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "monstercat",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+  </body>
+</main>
+<!-- bootsrap & custom js -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
