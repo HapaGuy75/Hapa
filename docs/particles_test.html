@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Dust</title>
+  <script>
+    window.onload = function(){
+      var canvas = document.getElementById("dust"),
+          c = canvas.getContext("2d"),
+          particles = {},
+          particleIndex = 0;
+      function Particle(){
+        this.x = 50;
+        this.y = canvas.height / 90;
+        this.size = Math.random() * 5 * Math.random();
+        this.vx = Math.random() * 5;
+        this.vy = Math.random() * 4 - 1;
+        this.gravity = 0.0005;
+        particleIndex++;
+        particles[particleIndex] = this;
+        this.id = particleIndex;
+      }
+      Particle.prototype.draw = function(){
+        this.x += this.vx;
+        this.y += this.vy;
+        this.vx -= Math.random() - Math.random();
+        this.vy += this.gravity;
+        this.size += Math.random() * Math.random() / 10;
+        if (this.size >= 15){
+          delete particles[this.id];
+        }
+        if (1){
+            c.fillStyle = "rgba(241, 241, 241, 0.175)";
+            c.beginPath();
+            c.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+            c.fill();
+        }
+      };
+      setInterval(function(){
+        c.fillStyle = "#1e1e1e"
+        c.fillRect(0,0,canvas.width,canvas.height);
+        new Particle();
+        for (var i in particles){
+          particles[i].draw();
+        }
+      }, 40);
+    };
+  </script>
+  <style>
+  </style>
+</head>
+<body>
+  <canvas id="dust" width="1024" height="576">
+    Ups, your browser does not support html5 canvas
+  </canvas>
+  <span style="background-color: transparent;"></span>
+  <span style="background-color: rgba(241, 241, 241, 0.175);"></span>
+
+</body>
+</html>

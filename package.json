@@ -1,0 +1,27 @@
+{
+  "name": "hg75",
+  "version": "1.0.0",
+  "description": "first php test",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HapaGuy75/hapa-repo.git"
+  },
+  "keywords": [
+    "learning",
+    "testing",
+    "hg75"
+  ],
+  "author": "Ken Nakano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HapaGuy75/hapa-repo/issues"
+  },
+  "homepage": "https://github.com/HapaGuy75/hapa-repo#readme"
+}
