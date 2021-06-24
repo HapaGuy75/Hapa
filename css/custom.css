@@ -19,35 +19,14 @@ body {
   content: "";
 }
 
-.btn-holder {
+/* .btn-holder {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 1000px;
   margin: 10px auto 35px;
-}
-.btn {
-  position: relative;
-  display: inline-block;
-  width: auto; height: auto;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  margin: 0px 25px 15px;
-  min-width: 150px;
-}
-  .btn span {
-    position: relative;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    top: 0; left: 0;
-    width: 100%;
-    padding: 15px 20px;
-    transition: 0.3s;
-  }
+} */
+
 
 .sidenav {
   height: 100%;
@@ -188,41 +167,63 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
-
-/*--- btn-1 ---*/
-.btn-1::before {
-  background-color: rgb(255, 255, 255);
-  transition: 0.3s ease-out;
+.custom-btn {
+  position: relative;
+  /* display: inline-block; */
+  /* width: auto; height: auto; */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin: 0px 25px 15px;
+  min-width: 150px;
+  transition: all 0.3s;
+  /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5), */
+  /* 7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1); */
+ outline: none;
 }
-.btn-1 span {
-  color: rgb(28, 31, 30);
-  border: 1px solid rgb(228, 228, 228);
-  transition: 0.2s 0.1s;
+  .custom-btn span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+    color: #3e3e3e;
+  }
+.btn5 {
+  padding: 0;
+  border: none;
+  background: transparent;
 }
-.btn-1 span:hover {
-  color: rgb(0, 252, 168);
-  transition: 0.2s 0.1s;
+.btn5:hover {
+  color: #3a3a3a;
+  background: transparent;
+  box-shadow:none;
 }
-/* 1.hover-filled-slide-down */
-.btn.hover-filled-slide-down::before {
-  bottom: 0; left: 0; right: 0;
-  height: 100%; width: 100%;
+.btn5:before,
+.btn5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f80000;
+  transition:400ms ease all;
 }
-.btn.hover-filled-slide-down:hover::before {
-  height: 0%;
+.btn5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
 }
-
-/*--- btn-2 ---*/
-.btn-2::before {
-  background-color: rgb(28, 31, 30);
-  transition: 0.3s ease-out;
-}
-.btn-2 span {
-  color: rgb(28, 31, 30);
-  border: 1px solid rgb(28, 31, 30);
-  transition: 0.2s;
-}
-.btn-2 span:hover {
-  color: rgb(255,255,255);
-  transition: 0.2s 0.1s;
+.btn5:hover:before,
+.btn5:hover:after{
+  width:100%;
+  transition:500ms ease all;
 }
