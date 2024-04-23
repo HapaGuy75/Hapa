@@ -1,0 +1,5 @@
+:grd=1 :sl=0
+:cY=4 :cX=3 :txt="Total Fuel: "+:f1
+:cY=6 :cX=3 :txt="Fuel Time : "+:FuelTime
+:cY=8 :cX=3 :txt="Prop Time : "+:PropTime
+goto1

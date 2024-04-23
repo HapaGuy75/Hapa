@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Moving Geometrical Lines</title>
+	<style>
+		canvas {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<canvas></canvas>
+<script>
+	const canvas = document.querySelector('canvas');
+	const ctx = canvas.getContext('2d');
+
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+
+	const lines = [];
+
+	class Line {
+		constructor(x, y, dx, dy, color, lineWidth) {
+			this.x = x;
+			this.y = y;
+			this.dx = dx;
+			this.dy = dy;
+			this.color = color;
+			this.lineWidth = lineWidth;
+		}
+
+		draw() {
+			ctx.beginPath();
+			ctx.moveTo(this.x, this.y);
+			ctx.lineTo(this.x + this.dx, this.y + this.dy);
+			ctx.strokeStyle = this.color;
+			ctx.lineWidth = this.lineWidth;
+			ctx.stroke();
+		}
+
+		update() {
+			if (this.x > window.innerWidth || this.x < 0) {
+				this.dx = -this.dx;
+			}
+
+			if (this.y > window.innerHeight || this.y < 0) {
+				this.dy = -this.dy;
+			}
+
+			this.x += this.dx;
+			this.y += this.dy;
+
+			this.draw();
+		}
+	}
+
+	for (let i = 0; i < 50; i++) {
+		const x = Math.random() * window.innerWidth;
+		const y = Math.random() * window.innerHeight;
+		const dx = (Math.random() - 0.5) * 10;
+		const dy = (Math.random() - 0.5) * 10;
+		const color = `hsl(${Math.random() * 360}, 50%, 50%)`;
+		const lineWidth = Math.random() * 2 + 1;
+
+		lines.push(new Line(x, y, dx, dy, color, lineWidth));
+	}
+
+	function animate() {
+		requestAnimationFrame(animate);
+		ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+
+		for (let i = 0; i < lines.length; i++) {
+			lines[i].update();
+		}
+	}
+
+	animate();
+</script>
+</body>
+</html>

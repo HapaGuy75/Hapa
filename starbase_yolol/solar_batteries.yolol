@@ -1,0 +1,7 @@
+:theGrid=1
+:sL=0 :cX=3 :cY=10 :tI=:nName
+:sL=2 :cX=3 :cY=12 :tI="WX: "+ :wx + " - " + :adx
+:sL=3 :cX=3 :cY=13 :tI="WY: "+ :wy
+:sL=4 :cx=3 :cY=3 :tI="WZ: "+ :wz
+:sL=5 :cX=4 :cY=4 :tI=:SolBat
+goto1
